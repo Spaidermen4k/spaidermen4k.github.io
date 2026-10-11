@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>realty_smart_lead — автоматизация бизнеса</title>
+  <meta name="description" content="Автоматизирую рутину: заявки сразу в Telegram и таблицы, чат-боты, отчёты и ИИ-помощники для бизнеса.">
+
+  <!-- Шрифт Manrope с поддержкой кириллицы -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">realty<span>_smart_</span>lead</a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#process">Как работаем</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="https://t.me/teeeIegram" class="btn btn--small" target="_blank" rel="noopener">Написать</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Первый экран -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Автоматизация бизнеса</p>
+          <h1>Автоматизирую рутину, чтобы бизнес <em>не&nbsp;терял заявки</em></h1>
+          <p class="hero__lead">
+            Заявки с сайта и мессенджеров сразу попадают в Telegram и таблицу.
+            Напоминания, отчёты и ответы клиентам работают сами, без ручной работы.
+          </p>
+          <div class="hero__actions">
+            <a href="https://t.me/teeeIegram" class="btn" target="_blank" rel="noopener">Обсудить задачу</a>
+            <a href="#services" class="btn btn--ghost">Что я автоматизирую</a>
+          </div>
+        </div>
+
+        <!-- Пример уведомления о заявке -->
+        <div class="demo" aria-hidden="true">
+          <div class="demo__flow">
+            <span class="chip">Форма на сайте</span>
+            <span class="arrow">→</span>
+            <span class="chip">Бот</span>
+            <span class="arrow">→</span>
+            <span class="chip chip--accent">Telegram</span>
+          </div>
+          <div class="message">
+            <div class="message__head">
+              <span class="message__bot">🤖 Lead Bot</span>
+              <span class="message__time">через 3 сек</span>
+            </div>
+            <p class="message__title">🔔 Новая заявка</p>
+            <ul class="message__list">
+              <li><span>Имя:</span> Анна</li>
+              <li><span>Телефон:</span> +7 ••• ••• 12 34</li>
+              <li><span>Источник:</span> сайт</li>
+              <li><span>Запрос:</span> 2-комнатная, до 9 млн</li>
+            </ul>
+            <p class="message__done">✓ Добавлено в таблицу заявок</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Что можно автоматизировать</h2>
+        <p class="section__lead">Начинаем с того, что отнимает больше всего времени, и убираем ручную работу шаг за шагом.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">📥</div>
+            <h3>Обработка заявок</h3>
+            <p>Заявки с сайта, форм и мессенджеров мгновенно приходят менеджеру в Telegram и сохраняются в таблицу.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">💬</div>
+            <h3>Чат-боты</h3>
+            <p>Telegram-бот отвечает на частые вопросы, собирает контакты и записывает клиентов в любое время суток.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">📊</div>
+            <h3>Таблицы и отчёты</h3>
+            <p>Google-таблицы заполняются сами, а сводка по заявкам и продажам приходит каждое утро.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔗</div>
+            <h3>Связка сервисов</h3>
+            <p>CRM, почта, мессенджеры и таблицы обмениваются данными без копирования вручную.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">⏰</div>
+            <h3>Напоминания</h3>
+            <p>Клиенты и сотрудники получают напоминания о встречах, звонках и оплатах автоматически.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">✨</div>
+            <h3>ИИ-помощник</h3>
+            <p>ИИ сортирует заявки, готовит черновики ответов и выделяет главное из длинной переписки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как работаем -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <h2>Как работаем</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Обсуждаем задачу</h3>
+            <p>Вы рассказываете, где теряется время и какие заявки уходят без ответа.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Предлагаю решение</h3>
+            <p>Показываю, что автоматизировать в первую очередь и как это будет работать.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Настраиваю и тестирую</h3>
+            <p>Собираю автоматизацию и проверяю её на реальных сценариях вашего бизнеса.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Передаю и поддерживаю</h3>
+            <p>Объясняю, как всё устроено, и помогаю, если что-то нужно изменить.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta">
+          <h2>Расскажите, что отнимает у вас время</h2>
+          <p>Напишите в Telegram, и обсудим, что можно автоматизировать в вашем бизнесе.</p>
+          <a href="https://t.me/teeeIegram" class="btn btn--large" target="_blank" rel="noopener">Написать в Telegram · @teeeIegram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> realty_smart_lead</span>
+      <a href="https://t.me/teeeIegram" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
