@@ -252,6 +252,11 @@ h3 {
   color: var(--muted);
 }
 
+.message__list .hot {
+  color: #ff9f5a;
+  font-weight: 700;
+}
+
 .message__done {
   font-size: 14px;
   color: var(--accent);
