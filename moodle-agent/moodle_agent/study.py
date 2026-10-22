@@ -13,13 +13,9 @@ def _pdf_text(raw: bytes, limit: int = 60000) -> str:
 
 
 def collect_material(client, course_id: int) -> str:
-    chunks = []
-    for section in client.course_contents(course_id):
-        for module in section.get("modules", []):
-            for f in module.get("contents", []):
-                if f.get("filename", "").lower().endswith(".pdf"):
-                    chunks.append(f"# {module['name']}\n{_pdf_text(client.download(f['fileurl']))}")
-    return "\n\n".join(chunks)
+    return "\n\n".join(
+        f"# {name}\n{_pdf_text(raw)}" for name, raw in client.course_pdfs(course_id)
+    )
 
 
 def _ask(prompt: str, material: str) -> str:

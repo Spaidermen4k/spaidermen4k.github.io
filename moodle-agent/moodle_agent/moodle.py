@@ -47,6 +47,15 @@ class MoodleClient:
     def course_contents(self, course_id: int):
         return self.call("core_course_get_contents", courseid=course_id)
 
+    def course_pdfs(self, course_id: int):
+        out = []
+        for section in self.course_contents(course_id):
+            for module in section.get("modules", []):
+                for f in module.get("contents", []):
+                    if f.get("filename", "").lower().endswith(".pdf"):
+                        out.append((module["name"], self.download(f["fileurl"])))
+        return out
+
     def download(self, file_url: str) -> bytes:
         r = requests.get(file_url, params={"token": self.token}, timeout=60)
         r.raise_for_status()
